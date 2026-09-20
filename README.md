@@ -1,1 +1,3 @@
+## Skills & Tech
+
 ![HTML, CSS, JavaScript, TypeScript, React, Vue, Vite, Java, Spring, Python, FastAPI, Node.js, Redis, PostgreSQL, Git, Docker](https://skillicons.dev/icons?i=html,css,js,ts,react,vue,vite,java,spring,python,fastapi,nodejs,redis,postgres,git,docker&perline=16)
