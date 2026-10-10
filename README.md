@@ -7,14 +7,10 @@
   <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript" title="TypeScript" width="48" height="48" />
   <img src="https://skillicons.dev/icons?i=react" alt="React" title="React" width="48" height="48" />
   <img src="https://skillicons.dev/icons?i=vue" alt="Vue" title="Vue" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=nextjs" alt="Next.js" title="Next.js" width="48" height="48" />
   <img src="https://skillicons.dev/icons?i=vite" alt="Vite" title="Vite" width="48" height="48" />
   <img src="https://skillicons.dev/icons?i=tauri" alt="Tauri" title="Tauri" width="48" height="48" />
   <img src="https://skillicons.dev/icons?i=md" alt="Markdown" title="Markdown" width="48" height="48" />
   <img src="https://skillicons.dev/icons?i=npm" alt="npm" title="npm" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=java" alt="Java" title="Java" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=spring" alt="Spring" title="Spring" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=maven" alt="Maven" title="Maven" width="48" height="48" />
   <img src="https://skillicons.dev/icons?i=python" alt="Python" title="Python" width="48" height="48" />
   <img src="https://skillicons.dev/icons?i=fastapi" alt="FastAPI" title="FastAPI" width="48" height="48" />
   <img src="https://skillicons.dev/icons?i=anaconda" alt="Anaconda" title="Anaconda" width="48" height="48" />
