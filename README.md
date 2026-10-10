@@ -1,9 +1,6 @@
 ## Skills & Tech
 
 <p>
-  <img src="https://skillicons.dev/icons?i=html" alt="HTML" title="HTML" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=css" alt="CSS" title="CSS" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" title="JavaScript" width="48" height="48" />
   <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript" title="TypeScript" width="48" height="48" />
   <img src="https://skillicons.dev/icons?i=react" alt="React" title="React" width="48" height="48" />
   <img src="https://skillicons.dev/icons?i=vite" alt="Vite" title="Vite" width="48" height="48" />
