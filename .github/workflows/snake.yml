@@ -64,7 +64,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
         with:
           card: top-langs
-          options: username=shenyankm&theme_light=default&theme_dark=github_dark
+          options: username=shenyankm&langs_count=4&theme_light=default&theme_dark=github_dark
           path: dist/top-langs.svg
           core_version: 2.2.0
           fail_on_error: true
