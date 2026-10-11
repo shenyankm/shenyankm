@@ -1,3 +1,10 @@
+## GitHub Stats
+
+<p>
+  <a href="https://github.com/shenyankm"><img width="450" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/refs/heads/output/stats.svg" alt="GitHub stats" /></a>
+  <a href="https://github.com/shenyankm?tab=repositories"><img width="330" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/refs/heads/output/top-langs.svg" alt="Most used languages" /></a>
+</p>
+
 ## Skills & Tech
 
 <p>
@@ -27,16 +34,9 @@
 
 ## Pinned Repositories
 
-[![QwenLM/qwen-code](https://raw.githubusercontent.com/shenyankm/shenyankm/output/pin-qwen-code.svg)](https://github.com/QwenLM/qwen-code)
-[![shenyankm/PractiQ](https://raw.githubusercontent.com/shenyankm/shenyankm/output/pin-practiq.svg)](https://github.com/shenyankm/PractiQ)
-[![shenyankm/DocWeave](https://raw.githubusercontent.com/shenyankm/shenyankm/output/pin-docweave.svg)](https://github.com/shenyankm/DocWeave)
-
-## GitHub Stats
-
-<p>
-  <a href="https://github.com/shenyankm"><img width="450" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/refs/heads/output/stats.svg" alt="GitHub stats" /></a>
-  <a href="https://github.com/shenyankm?tab=repositories"><img width="330" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/refs/heads/output/top-langs.svg" alt="Most used languages" /></a>
-</p>
+[![QwenLM/qwen-code](https://raw.githubusercontent.com/shenyankm/shenyankm/refs/heads/output/pin-qwen-code.svg)](https://github.com/QwenLM/qwen-code)
+[![shenyankm/PractiQ](https://raw.githubusercontent.com/shenyankm/shenyankm/refs/heads/output/pin-practiq.svg)](https://github.com/shenyankm/PractiQ)
+[![shenyankm/DocWeave](https://raw.githubusercontent.com/shenyankm/shenyankm/refs/heads/output/pin-docweave.svg)](https://github.com/shenyankm/DocWeave)
 
 ## Contributions
 
