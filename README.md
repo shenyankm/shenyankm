@@ -36,7 +36,7 @@
 
 [![QwenLM/qwen-code](https://raw.githubusercontent.com/shenyankm/shenyankm/refs/heads/output/pin-qwen-code.svg)](https://github.com/QwenLM/qwen-code)
 [![shenyankm/PractiQ](https://raw.githubusercontent.com/shenyankm/shenyankm/refs/heads/output/pin-practiq.svg)](https://github.com/shenyankm/PractiQ)
-[![shenyankm/DocKiln](https://raw.githubusercontent.com/shenyankm/shenyankm/refs/heads/output/pin-dockiln.svg)](https://github.com/shenyankm/DocKiln)
+[![shenyankm/DocKiln](https://raw.githubusercontent.com/shenyankm/shenyankm/output/pin-dockiln.svg)](https://github.com/shenyankm/DocKiln)
 [![shenyankm/Clipsey](https://raw.githubusercontent.com/shenyankm/shenyankm/refs/heads/output/pin-clipsey.svg)](https://github.com/shenyankm/Clipsey)
 
 ## Contributions
