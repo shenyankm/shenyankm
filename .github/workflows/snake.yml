@@ -51,6 +51,15 @@ jobs:
           core_version: 2.2.0
           fail_on_error: true
           token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Generate Clipsey repository card
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
+        with:
+          card: pin
+          options: username=shenyankm&repo=Clipsey&show_owner=true&description_lines_count=3&theme_light=default&theme_dark=github_dark
+          path: dist/pin-clipsey.svg
+          core_version: 2.2.0
+          fail_on_error: true
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Generate GitHub stats card
         uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
         with:
@@ -75,7 +84,7 @@ jobs:
           from pathlib import Path
           import xml.etree.ElementTree as ET
 
-          names = ('github-snake', 'github-snake-dark', 'pin-qwen-code', 'pin-practiq', 'pin-docweave', 'stats', 'top-langs')
+          names = ('github-snake', 'github-snake-dark', 'pin-qwen-code', 'pin-practiq', 'pin-docweave', 'pin-clipsey', 'stats', 'top-langs')
           for name in names:
               root = ET.parse(Path('dist') / f'{name}.svg').getroot()
               assert root.tag == '{http://www.w3.org/2000/svg}svg', f'Invalid SVG: {name}'
