@@ -27,15 +27,15 @@
 
 ## Pinned Repositories
 
-[![QwenLM/qwen-code](https://github-stats-extended.vercel.app/api/pin/?username=QwenLM&repo=qwen-code&show_owner=true&description_lines_count=3&theme_light=default&theme_dark=github_dark)](https://github.com/QwenLM/qwen-code)
-[![shenyankm/PractiQ](https://github-stats-extended.vercel.app/api/pin/?username=shenyankm&repo=PractiQ&show_owner=true&description_lines_count=3&theme_light=default&theme_dark=github_dark&v=20261011)](https://github.com/shenyankm/PractiQ)
-[![shenyankm/DocWeave](https://github-stats-extended.vercel.app/api/pin/?username=shenyankm&repo=DocWeave&show_owner=true&description_lines_count=3&theme_light=default&theme_dark=github_dark&v=20261011)](https://github.com/shenyankm/DocWeave)
+[![QwenLM/qwen-code](https://raw.githubusercontent.com/shenyankm/shenyankm/output/pin-qwen-code.svg)](https://github.com/QwenLM/qwen-code)
+[![shenyankm/PractiQ](https://raw.githubusercontent.com/shenyankm/shenyankm/output/pin-practiq.svg)](https://github.com/shenyankm/PractiQ)
+[![shenyankm/DocWeave](https://raw.githubusercontent.com/shenyankm/shenyankm/output/pin-docweave.svg)](https://github.com/shenyankm/DocWeave)
 
 ## GitHub Stats
 
-[![GitHub stats](https://github-stats-extended.vercel.app/api?username=shenyankm&theme_light=default&theme_dark=github_dark)](https://github.com/shenyankm)
+[![GitHub stats](https://raw.githubusercontent.com/shenyankm/shenyankm/output/stats.svg)](https://github.com/shenyankm)
 
-[![Most used languages](https://github-stats-extended.vercel.app/api/top-langs/?username=shenyankm&theme_light=default&theme_dark=github_dark)](https://github.com/shenyankm?tab=repositories)
+[![Most used languages](https://raw.githubusercontent.com/shenyankm/shenyankm/output/top-langs.svg)](https://github.com/shenyankm?tab=repositories)
 
 ## Contributions
 
