@@ -5,6 +5,8 @@
   <a href="https://github.com/shenyankm?tab=repositories"><img width="330" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/refs/heads/output/top-langs.svg" alt="Most used languages" /></a>
 </p>
 
+[![GitHub Roast 评分卡](https://ghfind.com/api/card/mini/shenyankm)](https://ghfind.com/u/shenyankm?ref=badge)
+
 ## Skills & Tech
 
 <p>
