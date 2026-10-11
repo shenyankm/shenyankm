@@ -34,8 +34,8 @@
 ## GitHub Stats
 
 <p>
-  <a href="https://github.com/shenyankm"><img height="180" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/output/stats.svg" alt="GitHub stats" /></a>
-  <a href="https://github.com/shenyankm?tab=repositories"><img height="180" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/output/top-langs.svg" alt="Most used languages" /></a>
+  <a href="https://github.com/shenyankm"><img width="450" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/output/stats.svg" alt="GitHub stats" /></a>
+  <a href="https://github.com/shenyankm?tab=repositories"><img width="330" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/output/top-langs.svg" alt="Most used languages" /></a>
 </p>
 
 ## Contributions
