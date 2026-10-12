@@ -1,8 +1,8 @@
 ## GitHub Stats
 
 <p>
-  <a href="https://github.com/shenyankm"><img width="450" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/refs/heads/output/stats.svg" alt="GitHub stats" /></a>
-  <a href="https://github.com/shenyankm?tab=repositories"><img width="330" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/refs/heads/output/top-langs.svg" alt="Most used languages" /></a>
+  <a href="https://github.com/shenyankm"><img width="450" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/12e344c0659835379b1812c105716f9686341612/stats.svg" alt="GitHub stats" /></a>
+  <a href="https://github.com/shenyankm?tab=repositories"><img width="330" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/12e344c0659835379b1812c105716f9686341612/top-langs.svg" alt="Most used languages" /></a>
 </p>
 
 [![GitHub Roast 评分徽章](https://ghfind.com/api/badge/shenyankm)](https://ghfind.com/u/shenyankm?ref=badge)
@@ -55,10 +55,10 @@ Hi, I'm Yan Shen. I work with TypeScript, Python, and Rust to build tools for of
 
 I maintain PractiQ, DocKiln, and Clipsey. Qwen Code is an upstream project I contribute to.
 
-[![QwenLM/qwen-code](https://raw.githubusercontent.com/shenyankm/shenyankm/refs/heads/output/pin-qwen-code.svg)](https://github.com/QwenLM/qwen-code)
-[![shenyankm/PractiQ](https://raw.githubusercontent.com/shenyankm/shenyankm/refs/heads/output/pin-practiq.svg)](https://github.com/shenyankm/PractiQ)
-[![shenyankm/DocKiln](https://raw.githubusercontent.com/shenyankm/shenyankm/output/pin-dockiln.svg)](https://github.com/shenyankm/DocKiln)
-[![shenyankm/Clipsey](https://raw.githubusercontent.com/shenyankm/shenyankm/output/pin-clipsey.svg)](https://github.com/shenyankm/Clipsey)
+[![QwenLM/qwen-code](https://raw.githubusercontent.com/shenyankm/shenyankm/12e344c0659835379b1812c105716f9686341612/pin-qwen-code.svg)](https://github.com/QwenLM/qwen-code)
+[![shenyankm/PractiQ](https://raw.githubusercontent.com/shenyankm/shenyankm/12e344c0659835379b1812c105716f9686341612/pin-practiq.svg)](https://github.com/shenyankm/PractiQ)
+[![shenyankm/DocKiln](https://raw.githubusercontent.com/shenyankm/shenyankm/12e344c0659835379b1812c105716f9686341612/pin-dockiln.svg)](https://github.com/shenyankm/DocKiln)
+[![shenyankm/Clipsey](https://raw.githubusercontent.com/shenyankm/shenyankm/12e344c0659835379b1812c105716f9686341612/pin-clipsey.svg)](https://github.com/shenyankm/Clipsey)
 
 ## Contributions
 
@@ -69,7 +69,7 @@ Selected merged fixes in [Qwen Code](https://github.com/QwenLM/qwen-code):
 - [LSP document synchronization](https://github.com/QwenLM/qwen-code/pull/11443): synchronize target documents before queries.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/output/github-snake.svg" />
-  <img alt="Snake animation of my GitHub contributions" src="https://raw.githubusercontent.com/shenyankm/shenyankm/output/github-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/12e344c0659835379b1812c105716f9686341612/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/12e344c0659835379b1812c105716f9686341612/github-snake.svg" />
+  <img alt="Snake animation of my GitHub contributions" src="https://raw.githubusercontent.com/shenyankm/shenyankm/12e344c0659835379b1812c105716f9686341612/github-snake.svg" />
 </picture>
