@@ -2,8 +2,8 @@ name: Update profile images
 
 on:
   schedule:
-    # Every hour at HH:17, UTC+8. GitHub cron uses UTC.
-    - cron: '17 * * * *'
+    # Every hour at HH:01, UTC+8. GitHub cron uses UTC.
+    - cron: '1 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -98,3 +98,30 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Refresh README image versions
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PYTHON'
+          import base64, json, os, re, subprocess
+
+          repo = os.environ["GITHUB_REPOSITORY"]
+          def api(path):
+              return json.loads(subprocess.check_output(["gh", "api", f"repos/{repo}/{path}"], text=True))
+
+          image_sha = api("git/ref/heads/output")["object"]["sha"]
+          readme = api("contents/README.md")
+          original = base64.b64decode(readme["content"]).decode()
+          # Versioned URLs prevent GitHub's image proxy from serving an earlier generation.
+          pattern = rf"https://raw\.githubusercontent\.com/{re.escape(repo)}/(?:refs/heads/output|output|[0-9a-f]{{40}})/([\w-]+\.svg)(?:\?[^\"\s)>]*)?"
+          updated, count = re.subn(pattern, rf"https://raw.githubusercontent.com/{repo}/{image_sha}/\1", original)
+          assert count, "No generated image URLs found in README"
+          if updated != original:
+              payload = {
+                  "message": "chore: refresh profile image versions\n\nCo-authored-by: Codex <codex@openai.com>",
+                  "sha": readme["sha"],
+                  "content": base64.b64encode(updated.encode()).decode(),
+              }
+              subprocess.run(["gh", "api", f"repos/{repo}/contents/README.md", "--method", "PUT", "--input", "-"],
+                             input=json.dumps(payload), text=True, check=True)
+          PYTHON
