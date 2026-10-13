@@ -78,14 +78,6 @@ Hi, I'm Yan Shen. I work with TypeScript, Python, and Rust to build tools for of
   </tr>
 </table>
 
-## Contributions
-
-Selected merged fixes in [Qwen Code](https://github.com/QwenLM/qwen-code):
-
-- [LSP capability negotiation](https://github.com/QwenLM/qwen-code/pull/13494): stop advertising unsupported dynamic registration.
-- [Web shell SDK requests](https://github.com/QwenLM/qwen-code/pull/11913): allow sequential requests during session creation.
-- [LSP document synchronization](https://github.com/QwenLM/qwen-code/pull/11443): synchronize target documents before queries.
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/796ae634cfd4eee551771a53a8b94f2e73df6ca8/github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/796ae634cfd4eee551771a53a8b94f2e73df6ca8/github-snake.svg" />
