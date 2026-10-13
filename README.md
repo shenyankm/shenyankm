@@ -8,10 +8,7 @@
     </picture>
   </a>
   <a href="https://github.com/shenyankm?tab=repositories">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=shenyankm&amp;theme=github_dark" />
-      <img width="48%" align="top" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=shenyankm&amp;theme=github" alt="Most used languages by repository count" />
-    </picture>
+    <img width="48%" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/b63972e2bec83221b2bf6830c9da785d168e7abd/top-langs.svg" alt="Most used languages by code size" />
   </a>
 </p>
 
