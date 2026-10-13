@@ -47,8 +47,6 @@ Hi, I'm Yan Shen. I work with TypeScript, Python, and Rust to build tools for of
 
 ## Pinned Repositories
 
-I maintain PractiQ, DocKiln, and Clipsey. Qwen Code is an upstream project I contribute to.
-
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
