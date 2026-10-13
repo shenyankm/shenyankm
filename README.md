@@ -11,45 +11,16 @@
 
 Hi, I'm Yan Shen. I work with TypeScript, Python, and Rust to build tools for offline learning, document processing, and saving web excerpts. I also contribute fixes to [Qwen Code](https://github.com/QwenLM/qwen-code).
 
-## Skills & Tech
+### Stack
 
-**Languages & Applications**
-
-<p>
-  <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript" title="TypeScript" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=python" alt="Python" title="Python" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=rust" alt="Rust" title="Rust" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=react" alt="React" title="React" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=vue" alt="Vue" title="Vue" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=vite" alt="Vite" title="Vite" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=tauri" alt="Tauri" title="Tauri" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" title="Node.js" width="48" height="48" />
-</p>
-
-**Backend & Data**
-
-<p>
-  <img src="https://skillicons.dev/icons?i=fastapi" alt="FastAPI" title="FastAPI" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL" title="PostgreSQL" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" title="MySQL" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=sqlite" alt="SQLite" title="SQLite" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=redis" alt="Redis" title="Redis" width="48" height="48" />
-</p>
-
-**Tools & Deployment**
-
-<p>
-  <img src="https://skillicons.dev/icons?i=git" alt="Git" title="Git" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=github" alt="GitHub" title="GitHub" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=githubactions" alt="GitHub Actions" title="GitHub Actions" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=npm" alt="npm" title="npm" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=anaconda" alt="Anaconda" title="Anaconda" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=linux" alt="Linux" title="Linux" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=ubuntu" alt="Ubuntu" title="Ubuntu" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=docker" alt="Docker" title="Docker" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=nginx" alt="Nginx" title="Nginx" width="48" height="48" />
-  <img src="https://skillicons.dev/icons?i=cloudflare" alt="Cloudflare" title="Cloudflare" width="48" height="48" />
-</p>
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
+![Vue](https://img.shields.io/badge/Vue-4FC08D?style=flat&logo=vuedotjs&logoColor=white)
+![Tauri](https://img.shields.io/badge/Tauri-24C8D8?style=flat&logo=tauri&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 
 ## Pinned Repositories
 
