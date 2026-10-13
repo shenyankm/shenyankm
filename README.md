@@ -17,10 +17,6 @@
 
 [![GitHub Roast 评分徽章](https://ghfind.com/api/badge/shenyankm)](https://ghfind.com/u/shenyankm?ref=badge)
 
-## About Me
-
-Hi, I'm Yan Shen. I work with TypeScript, Python, and Rust to build tools for offline learning, document processing, and saving web excerpts. I also contribute fixes to [Qwen Code](https://github.com/QwenLM/qwen-code).
-
 ### Stack
 
 **Languages & Applications**
