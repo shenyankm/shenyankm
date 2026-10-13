@@ -8,7 +8,7 @@
     </picture>
   </a>
   <a href="https://github.com/shenyankm?tab=repositories">
-    <img width="48%" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/a838bcc7282358d911cfada4d1e411ede7207ae4/top-langs.svg" alt="Most used languages by code size" />
+    <img width="48%" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/79d28324bc070af77281eea4200bc4cea2e60159/top-langs.svg" alt="Most used languages by code size" />
   </a>
 </p>
 
@@ -82,7 +82,7 @@
 </table>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/a838bcc7282358d911cfada4d1e411ede7207ae4/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/a838bcc7282358d911cfada4d1e411ede7207ae4/github-snake.svg" />
-  <img alt="Snake animation of my GitHub contributions" src="https://raw.githubusercontent.com/shenyankm/shenyankm/a838bcc7282358d911cfada4d1e411ede7207ae4/github-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/79d28324bc070af77281eea4200bc4cea2e60159/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/79d28324bc070af77281eea4200bc4cea2e60159/github-snake.svg" />
+  <img alt="Snake animation of my GitHub contributions" src="https://raw.githubusercontent.com/shenyankm/shenyankm/79d28324bc070af77281eea4200bc4cea2e60159/github-snake.svg" />
 </picture>
