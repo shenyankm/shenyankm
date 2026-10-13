@@ -1,8 +1,8 @@
 ## GitHub Stats
 
 <p>
-  <a href="https://github.com/shenyankm"><img width="450" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/45f1c417dbab714b390c33cc15cbf0e3de806729/stats.svg" alt="GitHub stats" /></a>
-  <a href="https://github.com/shenyankm?tab=repositories"><img width="330" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/45f1c417dbab714b390c33cc15cbf0e3de806729/top-langs.svg" alt="Most used languages" /></a>
+  <a href="https://github.com/shenyankm"><img width="450" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/6559612e50bdf52d2fb59318e31272c020596823/stats.svg" alt="GitHub stats" /></a>
+  <a href="https://github.com/shenyankm?tab=repositories"><img width="330" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/6559612e50bdf52d2fb59318e31272c020596823/top-langs.svg" alt="Most used languages" /></a>
 </p>
 
 [![GitHub Roast 评分徽章](https://ghfind.com/api/badge/shenyankm)](https://ghfind.com/u/shenyankm?ref=badge)
@@ -79,7 +79,7 @@ Hi, I'm Yan Shen. I work with TypeScript, Python, and Rust to build tools for of
 </table>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/45f1c417dbab714b390c33cc15cbf0e3de806729/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/45f1c417dbab714b390c33cc15cbf0e3de806729/github-snake.svg" />
-  <img alt="Snake animation of my GitHub contributions" src="https://raw.githubusercontent.com/shenyankm/shenyankm/45f1c417dbab714b390c33cc15cbf0e3de806729/github-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/6559612e50bdf52d2fb59318e31272c020596823/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/6559612e50bdf52d2fb59318e31272c020596823/github-snake.svg" />
+  <img alt="Snake animation of my GitHub contributions" src="https://raw.githubusercontent.com/shenyankm/shenyankm/6559612e50bdf52d2fb59318e31272c020596823/github-snake.svg" />
 </picture>
