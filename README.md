@@ -55,10 +55,36 @@ Hi, I'm Yan Shen. I work with TypeScript, Python, and Rust to build tools for of
 
 I maintain PractiQ, DocKiln, and Clipsey. Qwen Code is an upstream project I contribute to.
 
-[![QwenLM/qwen-code](https://raw.githubusercontent.com/shenyankm/shenyankm/796ae634cfd4eee551771a53a8b94f2e73df6ca8/pin-qwen-code.svg)](https://github.com/QwenLM/qwen-code)
-[![shenyankm/PractiQ](https://raw.githubusercontent.com/shenyankm/shenyankm/796ae634cfd4eee551771a53a8b94f2e73df6ca8/pin-practiq.svg)](https://github.com/shenyankm/PractiQ)
-[![shenyankm/DocKiln](https://raw.githubusercontent.com/shenyankm/shenyankm/796ae634cfd4eee551771a53a8b94f2e73df6ca8/pin-dockiln.svg)](https://github.com/shenyankm/DocKiln)
-[![shenyankm/Clipsey](https://raw.githubusercontent.com/shenyankm/shenyankm/796ae634cfd4eee551771a53a8b94f2e73df6ca8/pin-clipsey.svg)](https://github.com/shenyankm/Clipsey)
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/shenyankm/PractiQ"><b>PractiQ</b></a><br/>
+      An offline question-bank and mock-exam app for macOS, Windows, and Android, with AI-assisted document import and optional short-answer grading.<br/><br/>
+      <img src="https://img.shields.io/badge/Python-3776AB?style=flat&amp;logo=python&amp;logoColor=white" alt="Python" />
+      <img src="https://img.shields.io/github/stars/shenyankm/PractiQ?style=flat&amp;color=555" alt="PractiQ stars" />
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/shenyankm/DocKiln"><b>DocKiln</b></a><br/>
+      A Python toolkit for document conversion, Unicode PDF generation, structured extraction, and DOCX editing.<br/><br/>
+      <img src="https://img.shields.io/badge/Python-3776AB?style=flat&amp;logo=python&amp;logoColor=white" alt="Python" />
+      <img src="https://img.shields.io/github/stars/shenyankm/DocKiln?style=flat&amp;color=555" alt="DocKiln stars" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/shenyankm/Clipsey"><b>Clipsey</b></a><br/>
+      A browser extension to save web excerpts, restore highlights, and manage clips locally in Chrome, Edge, and Firefox.<br/><br/>
+      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&amp;logo=typescript&amp;logoColor=white" alt="TypeScript" />
+      <img src="https://img.shields.io/github/stars/shenyankm/Clipsey?style=flat&amp;color=555" alt="Clipsey stars" />
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/QwenLM/qwen-code"><b>Qwen Code</b></a><br/>
+      An open-source AI coding agent for the terminal. I contribute fixes to this upstream project.<br/><br/>
+      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&amp;logo=typescript&amp;logoColor=white" alt="TypeScript" />
+      <img src="https://img.shields.io/github/stars/QwenLM/qwen-code?style=flat&amp;color=555" alt="Qwen Code stars" />
+    </td>
+  </tr>
+</table>
 
 ## Contributions
 
