@@ -59,20 +59,6 @@
       <img src="https://img.shields.io/github/stars/shenyankm/PractiQ?style=flat&amp;color=555" alt="PractiQ stars" />
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/shenyankm/DocKiln"><b>DocKiln</b></a><br/>
-      A Python toolkit for document conversion, Unicode PDF generation, structured extraction, and DOCX editing.<br/><br/>
-      <img src="https://img.shields.io/badge/Python-3776AB?style=flat&amp;logo=python&amp;logoColor=white" alt="Python" />
-      <img src="https://img.shields.io/github/stars/shenyankm/DocKiln?style=flat&amp;color=555" alt="DocKiln stars" />
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/shenyankm/Clipsey"><b>Clipsey</b></a><br/>
-      A browser extension to save web excerpts, restore highlights, and manage clips locally in Chrome, Edge, and Firefox.<br/><br/>
-      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&amp;logo=typescript&amp;logoColor=white" alt="TypeScript" />
-      <img src="https://img.shields.io/github/stars/shenyankm/Clipsey?style=flat&amp;color=555" alt="Clipsey stars" />
-    </td>
-    <td width="50%" valign="top">
       <a href="https://github.com/QwenLM/qwen-code"><b>Qwen Code</b></a><br/>
       An open-source AI coding agent for the terminal. I contribute fixes to this upstream project.<br/><br/>
       <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&amp;logo=typescript&amp;logoColor=white" alt="TypeScript" />
