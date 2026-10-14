@@ -12,12 +12,11 @@
 
 ## Featured Project
 
-### [PractiQ](https://github.com/shenyankm/PractiQ)
-
-2025 Nanjing Excellent University Student Entrepreneurship Project.
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![PractiQ stars](https://img.shields.io/github/stars/shenyankm/PractiQ?style=flat&color=555)
+<p>
+  <a href="https://github.com/shenyankm/PractiQ"><strong>PractiQ</strong></a> · 2025 Nanjing Excellent University Student Entrepreneurship Project.
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&amp;logo=python&amp;logoColor=white" alt="Python" align="absmiddle" />
+  <img src="https://img.shields.io/github/stars/shenyankm/PractiQ?style=flat&amp;color=555" alt="PractiQ stars" align="absmiddle" />
+</p>
 
 ## Open Source Contributions
 
