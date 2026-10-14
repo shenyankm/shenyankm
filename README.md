@@ -54,7 +54,7 @@
   <tr>
     <td width="50%" valign="top">
       <a href="https://github.com/shenyankm/PractiQ"><b>PractiQ</b></a><br/>
-      An offline question-bank and mock-exam app for macOS, Windows, and Android, with AI-assisted document import and optional short-answer grading.<br/><br/>
+      Turn documents into question banks, then practise and take mock exams offline on macOS, Windows or Android.<br/><br/>
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat&amp;logo=python&amp;logoColor=white" alt="Python" />
       <img src="https://img.shields.io/github/stars/shenyankm/PractiQ?style=flat&amp;color=555" alt="PractiQ stars" />
     </td>
