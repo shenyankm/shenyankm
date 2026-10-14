@@ -61,6 +61,10 @@ jobs:
           core_version: 2.2.0
           fail_on_error: true
           token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Set up Zig for github-stats
+        uses: mlugg/setup-zig@d1434d08867e3ee9daa34448df10607b98908d29
+        with:
+          version: 0.16.0
       - name: Generate overview and languages with jstrieb/github-stats
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
@@ -69,10 +73,11 @@ jobs:
           MAX_RETRIES: "5"
         run: |
           test -n "$ACCESS_TOKEN" || { echo "Set ACCESS_TOKEN to a GitHub user token before generating stats."; exit 1; }
-          curl --fail --location --retry 3 --output "$RUNNER_TEMP/github-stats" \
-            https://github.com/jstrieb/github-stats/releases/download/2.0.1/github-stats_x86_64-linux
-          chmod +x "$RUNNER_TEMP/github-stats"
-          "$RUNNER_TEMP/github-stats" --overview-output-file dist/overview.svg --languages-output-file dist/languages.svg
+          mkdir -p "$RUNNER_TEMP/github-stats-source"
+          curl --fail --location --retry 3 https://github.com/jstrieb/github-stats/archive/ef574fae2ce8311f3e1ebb43e07c0c0fae0a41b6.tar.gz \
+            | tar -xz --strip-components=1 -C "$RUNNER_TEMP/github-stats-source"
+          (cd "$RUNNER_TEMP/github-stats-source" && zig build)
+          "$RUNNER_TEMP/github-stats-source/zig-out/bin/github-stats" --overview-output-file dist/overview.svg --languages-output-file dist/languages.svg
       - name: Check generated images
         run: |
           python3 - <<'PYTHON'
