@@ -74,7 +74,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
         with:
           card: top-langs
-          options: username=shenyankm&langs_count=3&theme_light=default&theme_dark=github_dark
+          options: username=shenyankm&langs_count=3&card_width=340&theme_light=default&theme_dark=github_dark
           path: dist/top-langs.svg
           core_version: 2.2.0
           fail_on_error: true
@@ -84,6 +84,13 @@ jobs:
           python3 - <<'PYTHON'
           from pathlib import Path
           import xml.etree.ElementTree as ET
+
+          # Match the 340 x 200 Summary Cards stats image used in the README.
+          languages = Path('dist/top-langs.svg')
+          svg = languages.read_text()
+          assert ET.fromstring(svg).attrib['viewBox'] == '0 0 340 205'
+          svg = svg.replace('height="205"', 'height="200"', 1).replace('viewBox="0 0 340 205"', 'viewBox="0 0 340 200"', 1)
+          languages.write_text(svg)
 
           names = ('github-snake', 'github-snake-dark', 'pin-qwen-code', 'pin-practiq', 'pin-dockiln', 'pin-clipsey', 'stats', 'top-langs')
           for name in names:
