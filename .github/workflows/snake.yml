@@ -61,60 +61,13 @@ jobs:
           core_version: 2.2.0
           fail_on_error: true
           token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Set up Zig for github-stats
-        uses: mlugg/setup-zig@d1434d08867e3ee9daa34448df10607b98908d29
-        with:
-          version: 0.16.0
-      - name: Generate overview and languages with jstrieb/github-stats
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          EXCLUDE_PRIVATE: "true"
-          SILENT: "true"
-          MAX_RETRIES: "5"
-        run: |
-          test -n "$ACCESS_TOKEN" || { echo "Set ACCESS_TOKEN to a GitHub user token before generating stats."; exit 1; }
-          git init "$RUNNER_TEMP/github-stats-source"
-          git -C "$RUNNER_TEMP/github-stats-source" fetch --depth 1 https://github.com/jstrieb/github-stats.git ef574fae2ce8311f3e1ebb43e07c0c0fae0a41b6
-          git -C "$RUNNER_TEMP/github-stats-source" checkout --detach FETCH_HEAD
-          (cd "$RUNNER_TEMP/github-stats-source" && zig build)
-          "$RUNNER_TEMP/github-stats-source/zig-out/bin/github-stats" --json-output-file "$RUNNER_TEMP/stats.json" --overview-output-file dist/overview.svg --languages-output-file dist/languages.svg
-          GH_TOKEN="$ACCESS_TOKEN" python3 - <<'PYTHON'
-          import json, os, re, subprocess
-          from pathlib import Path
-
-          def api(path):
-              return json.loads(subprocess.check_output(["gh", "api", path], text=True))
-
-          work = Path(os.environ["RUNNER_TEMP"])
-          stats = json.loads((work / "stats.json").read_text())
-          owner = os.environ["GITHUB_REPOSITORY_OWNER"]
-          assert stats["user"].lower() == owner.lower()
-          tracked = {repo["name"]: repo for repo in stats["repositories"]}
-          # Use owned public originals, rather than summing upstream repositories.
-          owned = json.loads(subprocess.check_output(["gh", "api", "--paginate", "--slurp", f"users/{owner}/repos?per_page=100&type=owner"], text=True))
-          stats["repositories"] = []
-          for repo in (repo for page in owned for repo in page if not repo["fork"] and not repo["private"]):
-              languages = api(f"repos/{repo['full_name']}/languages")
-              colors = {lang["name"]: lang["color"] for lang in tracked.get(repo["full_name"], {}).get("languages", []) or []}
-              stats["repositories"].append({"name": repo["full_name"], "stars": repo["stargazers_count"], "forks": repo["forks_count"], "private": False, "lines_changed": 0, "views": 0, "languages": [{"name": name, "size": size, "color": colors.get(name)} for name, size in languages.items()]})
-          (work / "stats.json").write_text(json.dumps(stats))
-          template = (work / "github-stats-source/src/templates/overview.svg").read_text()
-          # These two metrics cannot be verified completely for every owned repo.
-          template = re.sub(r"<tr[^>]*>.*?(?:{{ lines_changed }}|{{ views }}).*?</tr>", "", template)
-          template = template.replace("Repositories with contributions", "Public original repositories")
-          assert "{{ stars }}" in template and "{{ contributions }}" in template
-          assert "{{ lines_changed }}" not in template and "{{ views }}" not in template
-          (work / "overview-template.svg").write_text(template)
-          print(f"Public original repositories: {len(stats['repositories'])}; stars: {sum(repo['stars'] for repo in stats['repositories'])}; forks: {sum(repo['forks'] for repo in stats['repositories'])}")
-          PYTHON
-          "$RUNNER_TEMP/github-stats-source/zig-out/bin/github-stats" --json-input-file "$RUNNER_TEMP/stats.json" --overview-template "$RUNNER_TEMP/overview-template.svg" --overview-output-file dist/overview.svg --languages-output-file dist/languages.svg
       - name: Check generated images
         run: |
           python3 - <<'PYTHON'
           from pathlib import Path
           import xml.etree.ElementTree as ET
 
-          names = ('github-snake', 'github-snake-dark', 'pin-qwen-code', 'pin-practiq', 'pin-dockiln', 'pin-clipsey', 'overview', 'languages')
+          names = ('github-snake', 'github-snake-dark', 'pin-qwen-code', 'pin-practiq', 'pin-dockiln', 'pin-clipsey')
           for name in names:
               root = ET.parse(Path('dist') / f'{name}.svg').getroot()
               assert root.tag == '{http://www.w3.org/2000/svg}svg', f'Invalid SVG: {name}'
