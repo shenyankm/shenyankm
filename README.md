@@ -1,6 +1,6 @@
-# Yan Shen
+<h1 align="center">Yan Shen</h1>
 
-Building AI applications, developer tools, and open-source software.
+<p align="center">Building AI applications, developer tools, and open-source software.</p>
 
 ## Featured Project
 
