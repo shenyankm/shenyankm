@@ -73,9 +73,9 @@ jobs:
           MAX_RETRIES: "5"
         run: |
           test -n "$ACCESS_TOKEN" || { echo "Set ACCESS_TOKEN to a GitHub user token before generating stats."; exit 1; }
-          mkdir -p "$RUNNER_TEMP/github-stats-source"
-          curl --fail --location --retry 3 https://github.com/jstrieb/github-stats/archive/ef574fae2ce8311f3e1ebb43e07c0c0fae0a41b6.tar.gz \
-            | tar -xz --strip-components=1 -C "$RUNNER_TEMP/github-stats-source"
+          git init "$RUNNER_TEMP/github-stats-source"
+          git -C "$RUNNER_TEMP/github-stats-source" fetch --depth 1 https://github.com/jstrieb/github-stats.git ef574fae2ce8311f3e1ebb43e07c0c0fae0a41b6
+          git -C "$RUNNER_TEMP/github-stats-source" checkout --detach FETCH_HEAD
           (cd "$RUNNER_TEMP/github-stats-source" && zig build)
           "$RUNNER_TEMP/github-stats-source/zig-out/bin/github-stats" --overview-output-file dist/overview.svg --languages-output-file dist/languages.svg
       - name: Check generated images
