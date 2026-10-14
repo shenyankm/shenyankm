@@ -29,12 +29,12 @@
 <p>
   <a href="https://github.com/jstrieb/github-stats">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/df165dc8feec7bf5b60d887f85f3d6b0d3ded7ce/overview.svg#gh-dark-mode-only" />
-      <img width="48%" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/df165dc8feec7bf5b60d887f85f3d6b0d3ded7ce/overview.svg" alt="GitHub statistics overview" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/d0f9cb968ea4960ea0159793c9f1b085533d5efb/overview.svg#gh-dark-mode-only" />
+      <img width="48%" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/d0f9cb968ea4960ea0159793c9f1b085533d5efb/overview.svg" alt="GitHub statistics overview" />
     </picture>
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/df165dc8feec7bf5b60d887f85f3d6b0d3ded7ce/languages.svg#gh-dark-mode-only" />
-      <img width="48%" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/df165dc8feec7bf5b60d887f85f3d6b0d3ded7ce/languages.svg" alt="GitHub language statistics" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/d0f9cb968ea4960ea0159793c9f1b085533d5efb/languages.svg#gh-dark-mode-only" />
+      <img width="48%" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/d0f9cb968ea4960ea0159793c9f1b085533d5efb/languages.svg" alt="GitHub language statistics" />
     </picture>
   </a>
 </p>
@@ -76,7 +76,7 @@
 ## Contribution Activity
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/df165dc8feec7bf5b60d887f85f3d6b0d3ded7ce/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/df165dc8feec7bf5b60d887f85f3d6b0d3ded7ce/github-snake.svg" />
-  <img alt="Snake animation of my GitHub contributions" src="https://raw.githubusercontent.com/shenyankm/shenyankm/df165dc8feec7bf5b60d887f85f3d6b0d3ded7ce/github-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/d0f9cb968ea4960ea0159793c9f1b085533d5efb/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/d0f9cb968ea4960ea0159793c9f1b085533d5efb/github-snake.svg" />
+  <img alt="Snake animation of my GitHub contributions" src="https://raw.githubusercontent.com/shenyankm/shenyankm/d0f9cb968ea4960ea0159793c9f1b085533d5efb/github-snake.svg" />
 </picture>
