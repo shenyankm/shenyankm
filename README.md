@@ -17,7 +17,7 @@
 </p>
 
 <p>
-  <a href="https://github.com/shenyankm/opencode-tbot"><strong>opencode-tbot</strong></a>&nbsp;(2 stars, 0 forks) · A Telegram plugin for driving OpenCode from chat.
+  <a href="https://github.com/shenyankm/opencode-tbot"><strong>opencode-tbot</strong></a>&nbsp;(2 stars, 0 forks) · A Telegram plugin for driving OpenCode (v2) from chat.
 </p>
 
 ## Open Source Contributions
