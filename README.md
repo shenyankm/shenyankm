@@ -23,9 +23,9 @@
 
 The project name links to the repository; the merged count to my merged PRs; each PR number to the change.
 
-| Project | Merged | What the PRs cover | Highlight fixes |
-|---------|:------:|--------------------|-----------------|
-| [Qwen Code](https://github.com/QwenLM/qwen-code) | **[18](https://github.com/QwenLM/qwen-code/pulls?q=is%3Apr+is%3Amerged+author%3Ashenyankm)** | LSP document synchronization, SDK session creation, provider compatibility, terminal UI, and internationalization | [#11443](https://github.com/QwenLM/qwen-code/pull/11443) Synchronize saved document changes before LSP queries to prevent stale hover and definition results.<br>[#11913](https://github.com/QwenLM/qwen-code/pull/11913) Allow sequential capability and session-creation requests to complete without premature action timeouts.<br>[#9854](https://github.com/QwenLM/qwen-code/pull/9854) Preserve image inputs on DeepSeek-compatible routes when the model explicitly supports images. |
+| Project | Merged | Highlight fixes |
+|---------|:------:|-----------------|
+| [Qwen Code](https://github.com/QwenLM/qwen-code) | **[18](https://github.com/QwenLM/qwen-code/pulls?q=is%3Apr+is%3Amerged+author%3Ashenyankm)** | [#11443](https://github.com/QwenLM/qwen-code/pull/11443) Synchronize saved document changes before LSP queries to prevent stale hover and definition results.<br>[#11913](https://github.com/QwenLM/qwen-code/pull/11913) Allow sequential capability and session-creation requests to complete without premature action timeouts.<br>[#9854](https://github.com/QwenLM/qwen-code/pull/9854) Preserve image inputs on DeepSeek-compatible routes when the model explicitly supports images. |
 
 ## GitHub Stats
 
