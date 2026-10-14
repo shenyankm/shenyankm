@@ -74,7 +74,7 @@ The project name links to the repository; the merged count to my merged PRs; eac
 ## Contribution Activity
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/cd808c3eba8365174592c3177a78e5b687f0f5a3/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/cd808c3eba8365174592c3177a78e5b687f0f5a3/github-snake.svg" />
-  <img alt="Snake animation of my GitHub contributions" src="https://raw.githubusercontent.com/shenyankm/shenyankm/cd808c3eba8365174592c3177a78e5b687f0f5a3/github-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/3811ee77a40efd0bb3414338e1bbc46b384a3f84/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/3811ee77a40efd0bb3414338e1bbc46b384a3f84/github-snake.svg" />
+  <img alt="Snake animation of my GitHub contributions" src="https://raw.githubusercontent.com/shenyankm/shenyankm/3811ee77a40efd0bb3414338e1bbc46b384a3f84/github-snake.svg" />
 </picture>
