@@ -27,10 +27,14 @@
 ## GitHub Stats
 
 <p>
-  <a href="https://github.com/shenyankm">
+  <a href="https://github.com/jstrieb/github-stats">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=shenyankm&amp;theme=github_dark" />
-      <img width="48%" align="top" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=shenyankm&amp;theme=github" alt="GitHub stats" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/df165dc8feec7bf5b60d887f85f3d6b0d3ded7ce/overview.svg#gh-dark-mode-only" />
+      <img width="48%" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/df165dc8feec7bf5b60d887f85f3d6b0d3ded7ce/overview.svg" alt="GitHub statistics overview" />
+    </picture>
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/df165dc8feec7bf5b60d887f85f3d6b0d3ded7ce/languages.svg#gh-dark-mode-only" />
+      <img width="48%" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/df165dc8feec7bf5b60d887f85f3d6b0d3ded7ce/languages.svg" alt="GitHub language statistics" />
     </picture>
   </a>
 </p>
