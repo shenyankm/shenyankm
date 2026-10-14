@@ -1,3 +1,25 @@
+# Yan Shen
+
+Building AI applications, developer tools, and open-source software.
+
+## Featured Project
+
+### [PractiQ](https://github.com/shenyankm/PractiQ)
+
+2025 Nanjing Excellent University Student Entrepreneurship Project.
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![PractiQ stars](https://img.shields.io/github/stars/shenyankm/PractiQ?style=flat&color=555)
+
+## Open Source Contributions
+
+### [Qwen Code](https://github.com/QwenLM/qwen-code)
+
+An open-source AI coding agent for the terminal. See my [merged PRs](https://github.com/QwenLM/qwen-code/pulls?q=is%3Apr+is%3Amerged+author%3Ashenyankm).
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![Qwen Code stars](https://img.shields.io/github/stars/QwenLM/qwen-code?style=flat&color=555)
+
 ## GitHub Stats
 
 <p>
@@ -12,7 +34,7 @@
   </a>
 </p>
 
-### Stack
+## Tech Stack
 
 **Languages & Applications**
 
@@ -46,24 +68,7 @@
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=cloudflare&logoColor=white)
 
-## Pinned Repositories
-
-<table width="100%">
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/shenyankm/PractiQ"><b>PractiQ</b></a><br/>
-      2025 Nanjing Excellent University Student Entrepreneurship Project.<br/><br/>
-      <img src="https://img.shields.io/badge/Python-3776AB?style=flat&amp;logo=python&amp;logoColor=white" alt="Python" />
-      <img src="https://img.shields.io/github/stars/shenyankm/PractiQ?style=flat&amp;color=555" alt="PractiQ stars" />
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://github.com/QwenLM/qwen-code"><b>Qwen Code</b></a><br/>
-      An open-source AI coding agent for the terminal. Contributed <a href="https://github.com/QwenLM/qwen-code/pulls?q=is%3Apr+is%3Amerged+author%3Ashenyankm">merged PRs</a> to Qwen Code.<br/><br/>
-      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&amp;logo=typescript&amp;logoColor=white" alt="TypeScript" />
-      <img src="https://img.shields.io/github/stars/QwenLM/qwen-code?style=flat&amp;color=555" alt="Qwen Code stars" />
-    </td>
-  </tr>
-</table>
+## Contribution Activity
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/cd808c3eba8365174592c3177a78e5b687f0f5a3/github-snake-dark.svg" />
