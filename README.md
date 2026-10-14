@@ -35,9 +35,6 @@ The project name links to the repository; the merged count to my merged PRs; eac
       <img width="48%" align="top" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=shenyankm&amp;theme=github" alt="GitHub stats" />
     </picture>
   </a>
-  <a href="https://github.com/shenyankm?tab=repositories">
-    <img width="48%" align="top" src="https://raw.githubusercontent.com/shenyankm/shenyankm/cd808c3eba8365174592c3177a78e5b687f0f5a3/top-langs.svg" alt="Most used languages by code size" />
-  </a>
 </p>
 
 ## Tech Stack
