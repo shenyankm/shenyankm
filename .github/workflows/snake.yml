@@ -154,6 +154,10 @@ jobs:
           row_pattern = r"(\| \[Qwen&nbsp;Code\]\(https://github\.com/QwenLM/qwen-code\)&nbsp;\()[\d.,]+k?★(\) \| \*\*\[)\d+(\]\(https://github\.com/QwenLM/qwen-code/pulls\?[^)]+\)\*\*)"
           updated, count = re.subn(row_pattern, lambda m: f"{m[1]}{stars_label}★{m[2]}{search['total_count']}{m[3]}", updated)
           assert count == 1, "Expected one Qwen Code contribution row"
+          practiq = json.loads(subprocess.check_output(["gh", "api", f"repos/{os.environ['GITHUB_REPOSITORY_OWNER']}/PractiQ"], text=True))
+          project_pattern = r"(<strong>PractiQ</strong></a>&nbsp;\()\d+★(\))"
+          updated, count = re.subn(project_pattern, lambda m: f"{m[1]}{practiq['stargazers_count']}★{m[2]}", updated)
+          assert count == 1, "Expected one PractiQ featured project"
           if updated != original:
               payload = {
                   "message": "chore: refresh profile images and contribution counts\n\nCo-authored-by: Codex <codex@openai.com>",
