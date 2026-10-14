@@ -16,6 +16,10 @@
   <a href="https://github.com/shenyankm/PractiQ"><strong>PractiQ</strong></a>&nbsp;(4 stars, 1 fork) · 2025 Nanjing Excellent University Student Entrepreneurship Project.
 </p>
 
+<p>
+  <a href="https://github.com/shenyankm/opencode-tbot"><strong>opencode-tbot</strong></a>&nbsp;(2 stars, 0 forks) · A Telegram plugin for driving OpenCode from chat.
+</p>
+
 ## Open Source Contributions
 
 | Project | Merged | Highlight fixes |
