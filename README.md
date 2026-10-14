@@ -60,7 +60,7 @@
     </td>
     <td width="50%" valign="top">
       <a href="https://github.com/QwenLM/qwen-code"><b>Qwen Code</b></a><br/>
-      An open-source AI coding agent for the terminal. I contribute fixes to this upstream project.<br/><br/>
+      An open-source AI coding agent for the terminal. Contributed <a href="https://github.com/QwenLM/qwen-code/pulls?q=is%3Apr+is%3Amerged+author%3Ashenyankm">18 merged pull requests</a> to Qwen Code.<br/><br/>
       <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&amp;logo=typescript&amp;logoColor=white" alt="TypeScript" />
       <img src="https://img.shields.io/github/stars/QwenLM/qwen-code?style=flat&amp;color=555" alt="Qwen Code stars" />
     </td>
