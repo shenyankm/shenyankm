@@ -12,8 +12,6 @@
   </a>
 </p>
 
-[![GitHub Roast 评分徽章](https://ghfind.com/api/badge/shenyankm)](https://ghfind.com/u/shenyankm?ref=badge)
-
 ### Stack
 
 **Languages & Applications**
