@@ -13,7 +13,7 @@
 ## Featured Project
 
 <p>
-  <a href="https://github.com/shenyankm/PractiQ"><strong>PractiQ</strong></a>&nbsp;(4★) · 2025 Nanjing Excellent University Student Entrepreneurship Project.
+  <a href="https://github.com/shenyankm/PractiQ"><strong>PractiQ</strong></a>&nbsp;(4★, <img src="https://raw.githubusercontent.com/primer/octicons/main/icons/repo-forked-16.svg" width="14" height="14" alt="" /> 1 fork) · 2025 Nanjing Excellent University Student Entrepreneurship Project.
 </p>
 
 ## Open Source Contributions
