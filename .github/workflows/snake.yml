@@ -61,22 +61,25 @@ jobs:
           core_version: 2.2.0
           fail_on_error: true
           token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Generate GitHub stats card
-        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
-        with:
-          card: stats
-          options: username=shenyankm&line_height=30&theme_light=default&theme_dark=github_dark
-          path: dist/stats.svg
-          core_version: 2.2.0
-          fail_on_error: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Generate overview and languages with jstrieb/github-stats
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          EXCLUDE_PRIVATE: "true"
+          SILENT: "true"
+          MAX_RETRIES: "5"
+        run: |
+          test -n "$ACCESS_TOKEN" || { echo "Set ACCESS_TOKEN to a GitHub user token before generating stats."; exit 1; }
+          curl --fail --location --retry 3 --output "$RUNNER_TEMP/github-stats" \
+            https://github.com/jstrieb/github-stats/releases/download/2.0.1/github-stats_x86_64-linux
+          chmod +x "$RUNNER_TEMP/github-stats"
+          "$RUNNER_TEMP/github-stats" --overview-output-file dist/overview.svg --languages-output-file dist/languages.svg
       - name: Check generated images
         run: |
           python3 - <<'PYTHON'
           from pathlib import Path
           import xml.etree.ElementTree as ET
 
-          names = ('github-snake', 'github-snake-dark', 'pin-qwen-code', 'pin-practiq', 'pin-dockiln', 'pin-clipsey', 'stats')
+          names = ('github-snake', 'github-snake-dark', 'pin-qwen-code', 'pin-practiq', 'pin-dockiln', 'pin-clipsey', 'overview', 'languages')
           for name in names:
               root = ET.parse(Path('dist') / f'{name}.svg').getroot()
               assert root.tag == '{http://www.w3.org/2000/svg}svg', f'Invalid SVG: {name}'
