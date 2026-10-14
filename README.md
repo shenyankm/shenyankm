@@ -54,7 +54,7 @@
   <tr>
     <td width="50%" valign="top">
       <a href="https://github.com/shenyankm/PractiQ"><b>PractiQ</b></a><br/>
-      2025 Nanjing Outstanding University Student Entrepreneurship Project<br/><br/>
+      2025 Nanjing Excellent University Student Entrepreneurship Project<br/><br/>
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat&amp;logo=python&amp;logoColor=white" alt="Python" />
       <img src="https://img.shields.io/github/stars/shenyankm/PractiQ?style=flat&amp;color=555" alt="PractiQ stars" />
     </td>
