@@ -1,4 +1,4 @@
-<h2 align="center">Shen Yan</h2>
+<h3 align="center">Shen Yan</h3>
 
 <p align="center">AI Native Full-Stack Developer</p>
 
