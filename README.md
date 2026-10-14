@@ -1,6 +1,6 @@
 <h3 align="center">Yan Shen</h3>
 
-<p align="center">AI Native Full-Stack Developer</p>
+<p align="center"><img src="assets/profile-role.svg" width="400" height="28" alt="AI Native Full-Stack Developer" /></p>
 
 <p align="center">Building AI Agents, developer tools and open-source software.</p>
 
