@@ -25,6 +25,7 @@
 | Project | Merged | Highlight fixes |
 |---------|:------:|-----------------|
 | [Qwen&nbsp;Code](https://github.com/QwenLM/qwen-code)&nbsp;(28.5k★) | **[18](https://github.com/QwenLM/qwen-code/pulls?q=is%3Apr+is%3Amerged+author%3Ashenyankm)** | [#11443](https://github.com/QwenLM/qwen-code/pull/11443) Synchronize saved document changes before LSP queries to prevent stale hover and definition results.<br>[#11913](https://github.com/QwenLM/qwen-code/pull/11913) Allow sequential capability and session-creation requests to complete without premature action timeouts.<br>[#9854](https://github.com/QwenLM/qwen-code/pull/9854) Preserve image inputs on DeepSeek-compatible routes when the model explicitly supports images. |
+| [oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex)&nbsp;(33.5k★) | **[1](https://github.com/Yeachan-Heo/oh-my-codex/pulls?q=is%3Apr+is%3Amerged+author%3Ashenyankm)** | [#3797](https://github.com/Yeachan-Heo/oh-my-codex/pull/3797) Require completion evidence tied to the current task claim and structured verification before implementation tasks can be marked complete. |
 
 ## Tech Stack
 
