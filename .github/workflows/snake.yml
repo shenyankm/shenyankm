@@ -98,15 +98,17 @@ jobs:
           pattern = rf"https://raw\.githubusercontent\.com/{re.escape(repo)}/(?:refs/heads/output|output|[0-9a-f]{{40}})/([\w-]+\.svg)(?:\?[^\"\s)>]*)?"
           updated, count = re.subn(pattern, rf"https://raw.githubusercontent.com/{repo}/{image_sha}/\1", original)
           assert count, "No generated image URLs found in README"
-          upstream = json.loads(subprocess.check_output(["gh", "api", "repos/QwenLM/qwen-code"], text=True))
-          query = f"repo:QwenLM/qwen-code is:pr is:merged author:{os.environ['GITHUB_REPOSITORY_OWNER']}"
-          search = json.loads(subprocess.check_output(["gh", "api", "search/issues", "--method", "GET", "-f", f"q={query}", "-f", "per_page=1"], text=True))
-          assert not search["incomplete_results"], "Merged PR search returned incomplete results"
-          stars = upstream["stargazers_count"]
-          stars_label = f"{stars / 1000:.1f}k" if stars >= 1000 else str(stars)
-          row_pattern = r"(\| \[Qwen&nbsp;Code\]\(https://github\.com/QwenLM/qwen-code\)&nbsp;\()[\d.,]+k?★(\) \| \*\*\[)\d+(\]\(https://github\.com/QwenLM/qwen-code/pulls\?[^)]+\)\*\*)"
-          updated, count = re.subn(row_pattern, lambda m: f"{m[1]}{stars_label}★{m[2]}{search['total_count']}{m[3]}", updated)
-          assert count == 1, "Expected one Qwen Code contribution row"
+          for upstream_repo, label in (("QwenLM/qwen-code", "Qwen&nbsp;Code"), ("Yeachan-Heo/oh-my-codex", "oh&#8209;my&#8209;codex")):
+              upstream = json.loads(subprocess.check_output(["gh", "api", f"repos/{upstream_repo}"], text=True))
+              query = f"repo:{upstream_repo} is:pr is:merged author:{os.environ['GITHUB_REPOSITORY_OWNER']}"
+              search = json.loads(subprocess.check_output(["gh", "api", "search/issues", "--method", "GET", "-f", f"q={query}", "-f", "per_page=1"], text=True))
+              assert not search["incomplete_results"], f"Merged PR search returned incomplete results for {upstream_repo}"
+              stars = upstream["stargazers_count"]
+              stars_label = f"{stars / 1000:.1f}k" if stars >= 1000 else str(stars)
+              repo_url = re.escape(f"https://github.com/{upstream_repo}")
+              row_pattern = rf"(\| \[{re.escape(label)}\]\({repo_url}\)&nbsp;\()[\d.,]+k?★(\) \| \*\*\[)\d+(\]\({repo_url}/pulls\?[^)]+\)\*\*)"
+              updated, count = re.subn(row_pattern, lambda m: f"{m[1]}{stars_label}★{m[2]}{search['total_count']}{m[3]}", updated)
+              assert count == 1, f"Expected one {upstream_repo} contribution row"
           for project in ("PractiQ", "opencode-tbot"):
               stats = json.loads(subprocess.check_output(["gh", "api", f"repos/{os.environ['GITHUB_REPOSITORY_OWNER']}/{project}"], text=True))
               stars, forks = stats["stargazers_count"], stats["forks_count"]
