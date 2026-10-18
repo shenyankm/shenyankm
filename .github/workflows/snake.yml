@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   generate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
       - name: Generate light and dark animations
@@ -65,7 +65,7 @@ jobs:
               assert 'Something went wrong' not in ''.join(root.itertext()), f'Error card: {name}'
           PYTHON
       - name: Publish generated images
-        uses: crazy-max/ghaction-github-pages@df5cc2bfa78282ded844b354faee141f06b41865 # v4.2.0
+        uses: crazy-max/ghaction-github-pages@1d6ee9b181a81033a16bd707a1401afa978daab4 # v5.0.0
         with:
           target_branch: output
           build_dir: dist
