@@ -25,33 +25,47 @@ jobs:
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
+      # Run the pinned renderer directly to avoid pnpm/action-setup's layout warning (#281).
+      - name: Check out repository card renderer
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: stats-organization/github-readme-stats-action
+          ref: 2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
+          path: .profile-cards
+          persist-credentials: false
+      - name: Set up pnpm and Node.js
+        uses: pnpm/setup@a0881977cd8ea73b1ed212236c99ca10dcc80cf4 # v3.1.1
+        with:
+          working-directory: .profile-cards
+          runtime: node@24
+          install: false
+      - name: Install repository card dependencies
+        run: pnpm install --frozen-lockfile --prod --ignore-scripts
+        working-directory: .profile-cards
       - name: Generate Qwen Code repository card
-        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
-        with:
-          card: pin
-          options: username=QwenLM&repo=qwen-code&show_owner=true&description_lines_count=3&theme_light=default&theme_dark=github_dark
-          path: dist/pin-qwen-code.svg
-          core_version: 2.2.0
-          fail_on_error: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+        run: node .profile-cards/index.js
+        env:
+          INPUT_CARD: pin
+          INPUT_OPTIONS: username=QwenLM&repo=qwen-code&show_owner=true&description_lines_count=3&theme_light=default&theme_dark=github_dark
+          INPUT_PATH: dist/pin-qwen-code.svg
+          INPUT_FAIL_ON_ERROR: 'true'
+          PAT_1: ${{ secrets.GITHUB_TOKEN }}
       - name: Generate PractiQ repository card
-        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
-        with:
-          card: pin
-          options: username=shenyankm&repo=PractiQ&show_owner=true&description_lines_count=3&theme_light=default&theme_dark=github_dark
-          path: dist/pin-practiq.svg
-          core_version: 2.2.0
-          fail_on_error: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+        run: node .profile-cards/index.js
+        env:
+          INPUT_CARD: pin
+          INPUT_OPTIONS: username=shenyankm&repo=PractiQ&show_owner=true&description_lines_count=3&theme_light=default&theme_dark=github_dark
+          INPUT_PATH: dist/pin-practiq.svg
+          INPUT_FAIL_ON_ERROR: 'true'
+          PAT_1: ${{ secrets.GITHUB_TOKEN }}
       - name: Generate Clipsey repository card
-        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
-        with:
-          card: pin
-          options: username=shenyankm&repo=Clipsey&show_owner=true&description_lines_count=3&theme_light=default&theme_dark=github_dark
-          path: dist/pin-clipsey.svg
-          core_version: 2.2.0
-          fail_on_error: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+        run: node .profile-cards/index.js
+        env:
+          INPUT_CARD: pin
+          INPUT_OPTIONS: username=shenyankm&repo=Clipsey&show_owner=true&description_lines_count=3&theme_light=default&theme_dark=github_dark
+          INPUT_PATH: dist/pin-clipsey.svg
+          INPUT_FAIL_ON_ERROR: 'true'
+          PAT_1: ${{ secrets.GITHUB_TOKEN }}
       - name: Check generated images
         run: |
           python3 - <<'PYTHON'
