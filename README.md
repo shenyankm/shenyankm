@@ -25,7 +25,7 @@
 
 | Project | Merged | Highlights |
 |---------|:------:|-----------------|
-| [Qwen&nbsp;Code](https://github.com/QwenLM/qwen-code)&nbsp;(28.5k★) | **[18](https://github.com/QwenLM/qwen-code/pulls?q=is%3Apr+is%3Amerged+author%3Ashenyankm)** | [#11443](https://github.com/QwenLM/qwen-code/pull/11443) Synchronize saved document changes before LSP queries to prevent stale hover and definition results.<br>[#4653](https://github.com/QwenLM/qwen-code/pull/4653) Apply configurable AI-agent ignore rules consistently across file discovery, search, reads, and @ references.<br>[#3871](https://github.com/QwenLM/qwen-code/pull/3871) Expand CLI localization and add opt-in cached translation for dynamic commands; proposal [#3323](https://github.com/QwenLM/qwen-code/issues/3323) included in the official Roadmap. |
+| [Qwen&nbsp;Code](https://github.com/QwenLM/qwen-code)&nbsp;(28.6k★) | **[18](https://github.com/QwenLM/qwen-code/pulls?q=is%3Apr+is%3Amerged+author%3Ashenyankm)** | [#11443](https://github.com/QwenLM/qwen-code/pull/11443) Synchronize saved document changes before LSP queries to prevent stale hover and definition results.<br>[#4653](https://github.com/QwenLM/qwen-code/pull/4653) Apply configurable AI-agent ignore rules consistently across file discovery, search, reads, and @ references.<br>[#3871](https://github.com/QwenLM/qwen-code/pull/3871) Expand CLI localization and add opt-in cached translation for dynamic commands; proposal [#3323](https://github.com/QwenLM/qwen-code/issues/3323) included in the official Roadmap. |
 | [oh&#8209;my&#8209;codex](https://github.com/Yeachan-Heo/oh-my-codex)&nbsp;(33.6k★) | **[4](https://github.com/Yeachan-Heo/oh-my-codex/pulls?q=is%3Apr+is%3Amerged+author%3Ashenyankm)** | [#3810](https://github.com/Yeachan-Heo/oh-my-codex/pull/3810) Isolate team mailboxes to prevent cross-team message reads and acknowledgements, and prevent duplicate dispatches during runtime recovery.<br>[#3797](https://github.com/Yeachan-Heo/oh-my-codex/pull/3797) Require completion evidence tied to the current task claim and structured verification before implementation tasks can be marked complete.<br>[#3798](https://github.com/Yeachan-Heo/oh-my-codex/pull/3798) Record native SubagentStop events so finished subagents are tracked under the correct parent, with replay deduplication. |
 
 ## Tech Stack
@@ -65,7 +65,7 @@
 ## Contribution Activity
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/462623d75e6aab1a6a05e16fec9879f49c7e5ba0/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/462623d75e6aab1a6a05e16fec9879f49c7e5ba0/github-snake.svg" />
-  <img alt="Snake animation of my GitHub contributions" src="https://raw.githubusercontent.com/shenyankm/shenyankm/462623d75e6aab1a6a05e16fec9879f49c7e5ba0/github-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/a008304bccdb487c94b52869174bc8d50b1fbf87/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/a008304bccdb487c94b52869174bc8d50b1fbf87/github-snake.svg" />
+  <img alt="Snake animation of my GitHub contributions" src="https://raw.githubusercontent.com/shenyankm/shenyankm/a008304bccdb487c94b52869174bc8d50b1fbf87/github-snake.svg" />
 </picture>
