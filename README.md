@@ -14,7 +14,7 @@
 ## Featured Project
 
 <p>
-  <a href="https://github.com/shenyankm/PractiQ"><strong>PractiQ</strong></a>&nbsp;(4 stars, 1 fork) · 2025 Nanjing Excellent Entrepreneurship Project for University Students.
+  <a href="https://github.com/shenyankm/PractiQ"><strong>PractiQ</strong></a>&nbsp;(5 stars, 1 fork) · 2025 Nanjing Excellent Entrepreneurship Project for University Students.
 </p>
 
 <p>
@@ -65,7 +65,7 @@
 ## Contribution Activity
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/5263c9a425a91ee213351697a4ae5ed6641f753d/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/5263c9a425a91ee213351697a4ae5ed6641f753d/github-snake.svg" />
-  <img alt="Snake animation of my GitHub contributions" src="https://raw.githubusercontent.com/shenyankm/shenyankm/5263c9a425a91ee213351697a4ae5ed6641f753d/github-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/25267b09837dbe39466532ca37d93bc31c0da4c0/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/25267b09837dbe39466532ca37d93bc31c0da4c0/github-snake.svg" />
+  <img alt="Snake animation of my GitHub contributions" src="https://raw.githubusercontent.com/shenyankm/shenyankm/25267b09837dbe39466532ca37d93bc31c0da4c0/github-snake.svg" />
 </picture>
