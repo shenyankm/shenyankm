@@ -8,25 +8,21 @@
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat&amp;logo=python&amp;logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&amp;logo=typescript&amp;logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Rust-000000?style=flat&amp;logo=rust&amp;logoColor=white" alt="Rust" />
-  <a href="https://ghfind.com/u/shenyankm?ref=badge"><img src="https://ghfind.com/api/badge/Shenyankm?lang=en" alt="GitHub Roast score badge" /></a>
+  <a href="https://ghfind.com/u/shenyankm?ref=badge"><img src="https://raw.githubusercontent.com/shenyankm/shenyankm/8f966ae83c3ed6f2bfaaf6dd9b163bd0686d14b9/ghfind-badge.svg" alt="GitHub Roast score badge" /></a>
 </p>
 
 ## Featured Project
 
 <p>
-  <a href="https://github.com/shenyankm/PractiQ"><strong>PractiQ</strong></a>&nbsp;(6 stars, 1 fork) · 2025 Nanjing Excellent Entrepreneurship Project for University Students.
-</p>
-
-<p>
-  <a href="https://github.com/shenyankm/opencode-tbot"><strong>opencode-tbot</strong></a>&nbsp;(2 stars, 0 forks) · A Telegram plugin for driving OpenCode (v2) from chat.
+  <a href="https://github.com/shenyankm/PractiQ"><strong>PractiQ</strong></a>&nbsp;(6&nbsp;🌟) · 2025 Nanjing Excellent Entrepreneurship Project for University Students.
 </p>
 
 ## Open Source Contributions
 
 | Project | Merged | Highlights |
 |---------|:------:|-----------------|
-| [Qwen&nbsp;Code](https://github.com/QwenLM/qwen-code)<br>(28.6k&nbsp;🌟) | **[18](https://github.com/QwenLM/qwen-code/pulls?q=is%3Apr+is%3Amerged+author%3Ashenyankm)** | [#11443](https://github.com/QwenLM/qwen-code/pull/11443) Keep LSP hover and definitions in sync with saved changes.<br>[#4653](https://github.com/QwenLM/qwen-code/pull/4653) Unify AI-agent ignore rules across file access and search.<br>[#3871](https://github.com/QwenLM/qwen-code/pull/3871) Improve CLI localization and cached translation; [#3323](https://github.com/QwenLM/qwen-code/issues/3323) included in the official Roadmap. |
-| [oh&#8209;my&#8209;codex](https://github.com/Yeachan-Heo/oh-my-codex)<br>(33.6k&nbsp;🌟) | **[6](https://github.com/Yeachan-Heo/oh-my-codex/pulls?q=is%3Apr+is%3Amerged+author%3Ashenyankm)** | [#3810](https://github.com/Yeachan-Heo/oh-my-codex/pull/3810) Isolate team mailboxes and prevent duplicate dispatches during recovery.<br>[#3797](https://github.com/Yeachan-Heo/oh-my-codex/pull/3797) Require structured completion evidence for coding tasks.<br>[#3857](https://github.com/Yeachan-Heo/oh-my-codex/pull/3857) Validate mailbox creation and recover partial writes before retrying. |
+| [Qwen&nbsp;Code](https://github.com/QwenLM/qwen-code)&nbsp;(28.6k&nbsp;🌟) | **[18](https://github.com/QwenLM/qwen-code/pulls?q=is%3Apr+is%3Amerged+author%3Ashenyankm)** | [#11443](https://github.com/QwenLM/qwen-code/pull/11443) Keep LSP hover and definitions in sync with saved changes.<br>[#4653](https://github.com/QwenLM/qwen-code/pull/4653) Unify AI-agent ignore rules across file access and search.<br>[#3871](https://github.com/QwenLM/qwen-code/pull/3871) Improve CLI localization and cached translation; [#3323](https://github.com/QwenLM/qwen-code/issues/3323) included in the official Roadmap. |
+| [oh&#8209;my&#8209;codex](https://github.com/Yeachan-Heo/oh-my-codex)&nbsp;(33.6k&nbsp;🌟) | **[6](https://github.com/Yeachan-Heo/oh-my-codex/pulls?q=is%3Apr+is%3Amerged+author%3Ashenyankm)** | [#3810](https://github.com/Yeachan-Heo/oh-my-codex/pull/3810) Isolate team mailboxes and prevent duplicate dispatches during recovery.<br>[#3797](https://github.com/Yeachan-Heo/oh-my-codex/pull/3797) Require structured completion evidence for coding tasks.<br>[#3857](https://github.com/Yeachan-Heo/oh-my-codex/pull/3857) Validate mailbox creation and recover partial writes before retrying. |
 
 ## Tech Stack
 

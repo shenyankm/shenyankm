@@ -2,15 +2,15 @@ name: Update profile images
 
 on:
   schedule:
-    # Every hour at HH:01, UTC+8. GitHub cron uses UTC.
-    - cron: '1 * * * *'
+    # Daily at 00:00 Beijing time (UTC+8). GitHub cron uses UTC.
+    - cron: '0 16 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: profile-images
+  group: profile-readme
   cancel-in-progress: false
 
 jobs:
@@ -66,17 +66,25 @@ jobs:
           INPUT_PATH: dist/pin-clipsey.svg
           INPUT_FAIL_ON_ERROR: 'true'
           PAT_1: ${{ secrets.GITHUB_TOKEN }}
+      - name: Fetch English GHFind score badge
+        run: |
+          curl --fail --location --retry 3 --connect-timeout 10 --max-time 60 \
+            'https://ghfind.com/api/badge/Shenyankm?lang=en' -o dist/ghfind-badge.svg
       - name: Check generated images
         run: |
           python3 - <<'PYTHON'
           from pathlib import Path
+          import re
           import xml.etree.ElementTree as ET
 
-          names = ('github-snake', 'github-snake-dark', 'pin-qwen-code', 'pin-practiq', 'pin-clipsey')
+          names = ('github-snake', 'github-snake-dark', 'pin-qwen-code', 'pin-practiq', 'pin-clipsey', 'ghfind-badge')
           for name in names:
               root = ET.parse(Path('dist') / f'{name}.svg').getroot()
               assert root.tag == '{http://www.w3.org/2000/svg}svg', f'Invalid SVG: {name}'
               assert 'Something went wrong' not in ''.join(root.itertext()), f'Error card: {name}'
+          badge = ET.parse('dist/ghfind-badge.svg').getroot()
+          title = badge.find('{http://www.w3.org/2000/svg}title')
+          assert title is not None and re.match(r'GitHub Roast: \d+\.\d{2} [A-Z]', title.text or ''), 'Invalid English GHFind score badge'
           PYTHON
       - name: Publish generated images
         uses: crazy-max/ghaction-github-pages@1d6ee9b181a81033a16bd707a1401afa978daab4 # v5.0.0
@@ -85,7 +93,7 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Refresh README images and contribution counts
+      - name: Refresh README image links
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -103,26 +111,9 @@ jobs:
           pattern = rf"https://raw\.githubusercontent\.com/{re.escape(repo)}/(?:refs/heads/output|output|[0-9a-f]{{40}})/([\w-]+\.svg)(?:\?[^\"\s)>]*)?"
           updated, count = re.subn(pattern, rf"https://raw.githubusercontent.com/{repo}/{image_sha}/\1", original)
           assert count, "No generated image URLs found in README"
-          for upstream_repo, label in (("QwenLM/qwen-code", "Qwen&nbsp;Code"), ("Yeachan-Heo/oh-my-codex", "oh&#8209;my&#8209;codex")):
-              upstream = json.loads(subprocess.check_output(["gh", "api", f"repos/{upstream_repo}"], text=True))
-              query = f"repo:{upstream_repo} is:pr is:merged author:{os.environ['GITHUB_REPOSITORY_OWNER']}"
-              search = json.loads(subprocess.check_output(["gh", "api", "search/issues", "--method", "GET", "-f", f"q={query}", "-f", "per_page=1"], text=True))
-              assert not search["incomplete_results"], f"Merged PR search returned incomplete results for {upstream_repo}"
-              stars = upstream["stargazers_count"]
-              stars_label = f"{stars / 1000:.1f}k" if stars >= 1000 else str(stars)
-              repo_url = re.escape(f"https://github.com/{upstream_repo}")
-              row_pattern = rf"(\| \[{re.escape(label)}\]\({repo_url}\)<br>\()[\d.,]+k?&nbsp;🌟(\) \| \*\*\[)\d+(\]\({repo_url}/pulls\?[^)]+\)\*\*)"
-              updated, count = re.subn(row_pattern, lambda m: f"{m[1]}{stars_label}&nbsp;🌟{m[2]}{search['total_count']}{m[3]}", updated)
-              assert count == 1, f"Expected one {upstream_repo} contribution row"
-          for project in ("PractiQ", "opencode-tbot"):
-              stats = json.loads(subprocess.check_output(["gh", "api", f"repos/{os.environ['GITHUB_REPOSITORY_OWNER']}/{project}"], text=True))
-              stars, forks = stats["stargazers_count"], stats["forks_count"]
-              project_pattern = rf"(<strong>{re.escape(project)}</strong></a>&nbsp;\()\d+ stars?, \d+ forks?(\))"
-              updated, count = re.subn(project_pattern, lambda m: f"{m[1]}{stars} star{'s' if stars != 1 else ''}, {forks} fork{'s' if forks != 1 else ''}{m[2]}", updated)
-              assert count == 1, f"Expected one {project} featured project"
           if updated != original:
               payload = {
-                  "message": "chore: refresh profile images and contribution counts\n\nCo-authored-by: Codex <codex@openai.com>",
+                  "message": "chore: refresh profile images\n\nCo-authored-by: Codex <codex@openai.com>",
                   "sha": readme["sha"],
                   "content": base64.b64encode(updated.encode()).decode(),
               }

@@ -1,0 +1,56 @@
+name: Update profile statistics
+
+on:
+  schedule:
+    # Daily at 06:00 and 18:00 Beijing time (UTC+8). GitHub cron uses UTC.
+    - cron: '0 10,22 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-readme
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Refresh project stars and merged PR counts
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PYTHON'
+          import base64, json, os, re, subprocess
+
+          repo = os.environ["GITHUB_REPOSITORY"]
+          readme = json.loads(subprocess.check_output(["gh", "api", f"repos/{repo}/contents/README.md"], text=True))
+          original = base64.b64decode(readme["content"]).decode()
+          updated = original
+          for upstream_repo, label in (("QwenLM/qwen-code", "Qwen&nbsp;Code"), ("Yeachan-Heo/oh-my-codex", "oh&#8209;my&#8209;codex")):
+              upstream = json.loads(subprocess.check_output(["gh", "api", f"repos/{upstream_repo}"], text=True))
+              query = f"repo:{upstream_repo} is:pr is:merged author:{os.environ['GITHUB_REPOSITORY_OWNER']}"
+              search = json.loads(subprocess.check_output(["gh", "api", "search/issues", "--method", "GET", "-f", f"q={query}", "-f", "per_page=1"], text=True))
+              assert not search["incomplete_results"], f"Merged PR search returned incomplete results for {upstream_repo}"
+              stars = upstream["stargazers_count"]
+              stars_label = f"{stars / 1000:.1f}k" if stars >= 1000 else str(stars)
+              repo_url = re.escape(f"https://github.com/{upstream_repo}")
+              row_pattern = rf"(\| \[{re.escape(label)}\]\({repo_url}\)&nbsp;\()[\d.,]+k?&nbsp;🌟(\) \| \*\*\[)\d+(\]\({repo_url}/pulls\?[^)]+\)\*\*)"
+              updated, count = re.subn(row_pattern, lambda m: f"{m[1]}{stars_label}&nbsp;🌟{m[2]}{search['total_count']}{m[3]}", updated)
+              assert count == 1, f"Expected one {upstream_repo} contribution row"
+          stats = json.loads(subprocess.check_output(["gh", "api", f"repos/{os.environ['GITHUB_REPOSITORY_OWNER']}/PractiQ"], text=True))
+          stars = stats["stargazers_count"]
+          stars_label = f"{stars / 1000:.1f}k" if stars >= 1000 else str(stars)
+          updated, count = re.subn(r"(<strong>PractiQ</strong></a>&nbsp;\()[\d.,]+k?&nbsp;🌟(\))", lambda m: f"{m[1]}{stars_label}&nbsp;🌟{m[2]}", updated)
+          assert count == 1, "Expected one PractiQ featured project"
+          if updated != original:
+              payload = {
+                  "message": "chore: refresh profile statistics\n\nCo-authored-by: Codex <codex@openai.com>",
+                  "sha": readme["sha"],
+                  "content": base64.b64encode(updated.encode()).decode(),
+              }
+              subprocess.run(["gh", "api", f"repos/{repo}/contents/README.md", "--method", "PUT", "--input", "-"],
+                             input=json.dumps(payload), text=True, check=True)
+          PYTHON
