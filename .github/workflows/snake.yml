@@ -111,8 +111,8 @@ jobs:
               stars = upstream["stargazers_count"]
               stars_label = f"{stars / 1000:.1f}k" if stars >= 1000 else str(stars)
               repo_url = re.escape(f"https://github.com/{upstream_repo}")
-              row_pattern = rf"(\| \[{re.escape(label)}\]\({repo_url}\)&nbsp;\()[\d.,]+k?★(\) \| \*\*\[)\d+(\]\({repo_url}/pulls\?[^)]+\)\*\*)"
-              updated, count = re.subn(row_pattern, lambda m: f"{m[1]}{stars_label}★{m[2]}{search['total_count']}{m[3]}", updated)
+              row_pattern = rf"(\| \[{re.escape(label)}\]\({repo_url}\)&nbsp;\()[\d.,]+k?🌟(\) \| \*\*\[)\d+(\]\({repo_url}/pulls\?[^)]+\)\*\*)"
+              updated, count = re.subn(row_pattern, lambda m: f"{m[1]}{stars_label}🌟{m[2]}{search['total_count']}{m[3]}", updated)
               assert count == 1, f"Expected one {upstream_repo} contribution row"
           for project in ("PractiQ", "opencode-tbot"):
               stats = json.loads(subprocess.check_output(["gh", "api", f"repos/{os.environ['GITHUB_REPOSITORY_OWNER']}/{project}"], text=True))
