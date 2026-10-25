@@ -17,6 +17,10 @@
   <a href="https://github.com/shenyankm/PractiQ"><strong>PractiQ</strong></a>&nbsp;(6&nbsp;🌟) · 2025 Nanjing Excellent Entrepreneurship Project for University Students.
 </p>
 
+<p>
+  <a href="https://github.com/shenyankm/pi-zvec-status"><strong>pi-zvec-status</strong></a> · Pi extension for zvec-grep index status and workspace management.
+</p>
+
 ## Open Source Contributions
 
 | Project | Merged | Highlights |
