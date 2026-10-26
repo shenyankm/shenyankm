@@ -21,6 +21,10 @@
   <a href="https://github.com/shenyankm/pi-zvec-status"><strong>pi-zvec-status</strong></a> · Pi extension for zvec-grep index status and workspace management.
 </p>
 
+<p>
+  <a href="https://github.com/shenyankm/worktree-relay"><strong>Worktree Relay</strong></a> · Shared Git worktree change awareness for coding agents.
+</p>
+
 ## Open Source Contributions
 
 | Project | Merged | Highlights |
