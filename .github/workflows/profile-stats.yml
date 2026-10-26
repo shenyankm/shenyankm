@@ -40,11 +40,6 @@ jobs:
               row_pattern = rf"(\| \[{re.escape(label)}\]\({repo_url}\)&nbsp;\()[\d.,]+k?&nbsp;🌟(\) \| \*\*\[)\d+(\]\({repo_url}/pulls\?[^)]+\)\*\*)"
               updated, count = re.subn(row_pattern, lambda m: f"{m[1]}{stars_label}&nbsp;🌟{m[2]}{search['total_count']}{m[3]}", updated)
               assert count == 1, f"Expected one {upstream_repo} contribution row"
-          stats = json.loads(subprocess.check_output(["gh", "api", f"repos/{os.environ['GITHUB_REPOSITORY_OWNER']}/PractiQ"], text=True))
-          stars = stats["stargazers_count"]
-          stars_label = f"{stars / 1000:.1f}k" if stars >= 1000 else str(stars)
-          updated, count = re.subn(r"(<strong>PractiQ</strong></a>&nbsp;\()[\d.,]+k?&nbsp;🌟(\))", lambda m: f"{m[1]}{stars_label}&nbsp;🌟{m[2]}", updated)
-          assert count == 1, "Expected one PractiQ featured project"
           if updated != original:
               payload = {
                   "message": "chore: refresh profile statistics\n\nCo-authored-by: Codex <codex@openai.com>",

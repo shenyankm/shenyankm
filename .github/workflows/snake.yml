@@ -25,47 +25,6 @@ jobs:
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
-      # Run the pinned renderer directly to avoid pnpm/action-setup's layout warning (#281).
-      - name: Check out repository card renderer
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          repository: stats-organization/github-readme-stats-action
-          ref: 2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
-          path: .profile-cards
-          persist-credentials: false
-      - name: Set up pnpm and Node.js
-        uses: pnpm/setup@a0881977cd8ea73b1ed212236c99ca10dcc80cf4 # v3.1.1
-        with:
-          working-directory: .profile-cards
-          runtime: node@24
-          install: false
-      - name: Install repository card dependencies
-        run: pnpm install --frozen-lockfile --prod --ignore-scripts
-        working-directory: .profile-cards
-      - name: Generate Qwen Code repository card
-        run: node .profile-cards/index.js
-        env:
-          INPUT_CARD: pin
-          INPUT_OPTIONS: username=QwenLM&repo=qwen-code&show_owner=true&description_lines_count=3&theme_light=default&theme_dark=github_dark
-          INPUT_PATH: dist/pin-qwen-code.svg
-          INPUT_FAIL_ON_ERROR: 'true'
-          PAT_1: ${{ secrets.GITHUB_TOKEN }}
-      - name: Generate PractiQ repository card
-        run: node .profile-cards/index.js
-        env:
-          INPUT_CARD: pin
-          INPUT_OPTIONS: username=shenyankm&repo=PractiQ&show_owner=true&description_lines_count=3&theme_light=default&theme_dark=github_dark
-          INPUT_PATH: dist/pin-practiq.svg
-          INPUT_FAIL_ON_ERROR: 'true'
-          PAT_1: ${{ secrets.GITHUB_TOKEN }}
-      - name: Generate Clipsey repository card
-        run: node .profile-cards/index.js
-        env:
-          INPUT_CARD: pin
-          INPUT_OPTIONS: username=shenyankm&repo=Clipsey&show_owner=true&description_lines_count=3&theme_light=default&theme_dark=github_dark
-          INPUT_PATH: dist/pin-clipsey.svg
-          INPUT_FAIL_ON_ERROR: 'true'
-          PAT_1: ${{ secrets.GITHUB_TOKEN }}
       - name: Fetch English GHFind score badge
         run: |
           curl --fail --location --retry 3 --connect-timeout 10 --max-time 60 \
@@ -77,7 +36,7 @@ jobs:
           import re
           import xml.etree.ElementTree as ET
 
-          names = ('github-snake', 'github-snake-dark', 'pin-qwen-code', 'pin-practiq', 'pin-clipsey', 'ghfind-badge')
+          names = ('github-snake', 'github-snake-dark', 'ghfind-badge')
           for name in names:
               root = ET.parse(Path('dist') / f'{name}.svg').getroot()
               assert root.tag == '{http://www.w3.org/2000/svg}svg', f'Invalid SVG: {name}'
