@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat&amp;logo=python&amp;logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&amp;logo=typescript&amp;logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Rust-000000?style=flat&amp;logo=rust&amp;logoColor=white" alt="Rust" />
-  <a href="https://ghfind.com/u/shenyankm?ref=badge"><img src="https://raw.githubusercontent.com/shenyankm/shenyankm/752b2a33a215e65b2994ae6f66cd05853db035c1/ghfind-badge.svg" alt="GitHub Roast score badge" /></a>
+  <a href="https://ghfind.com/u/shenyankm?ref=badge"><img src="https://raw.githubusercontent.com/shenyankm/shenyankm/d2232ed01c250e119d5ed9911c47edffcea50f0e/ghfind-badge.svg" alt="GitHub Roast score badge" /></a>
 </p>
 
 ## Featured Project
@@ -65,7 +65,7 @@
 ## Contribution Activity
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/752b2a33a215e65b2994ae6f66cd05853db035c1/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/752b2a33a215e65b2994ae6f66cd05853db035c1/github-snake.svg" />
-  <img alt="Snake animation of my GitHub contributions" src="https://raw.githubusercontent.com/shenyankm/shenyankm/752b2a33a215e65b2994ae6f66cd05853db035c1/github-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/d2232ed01c250e119d5ed9911c47edffcea50f0e/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/d2232ed01c250e119d5ed9911c47edffcea50f0e/github-snake.svg" />
+  <img alt="Snake animation of my GitHub contributions" src="https://raw.githubusercontent.com/shenyankm/shenyankm/d2232ed01c250e119d5ed9911c47edffcea50f0e/github-snake.svg" />
 </picture>
