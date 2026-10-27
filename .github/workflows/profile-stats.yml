@@ -37,7 +37,7 @@ jobs:
               stars = upstream["stargazers_count"]
               stars_label = f"{stars / 1000:.1f}k" if stars >= 1000 else str(stars)
               repo_url = re.escape(f"https://github.com/{upstream_repo}")
-              row_pattern = rf"(\| \[{re.escape(label)}\]\({repo_url}\)&nbsp;\()[\d.,]+k?&nbsp;🌟(\) \| \*\*\[)\d+(\]\({repo_url}/pulls\?[^)]+\)\*\*)"
+              row_pattern = rf"(\| \[{re.escape(label)}\]\({repo_url}\)<br>\()[\d.,]+k?&nbsp;🌟(\) \| \*\*\[)\d+(\]\({repo_url}/pulls\?[^)]+\)\*\*)"
               updated, count = re.subn(row_pattern, lambda m: f"{m[1]}{stars_label}&nbsp;🌟{m[2]}{search['total_count']}{m[3]}", updated)
               assert count == 1, f"Expected one {upstream_repo} contribution row"
           if updated != original:
