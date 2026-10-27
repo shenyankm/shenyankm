@@ -22,7 +22,7 @@
 </p>
 
 <p>
-  <a href="https://github.com/shenyankm/worktree-relay"><strong>Worktree Relay</strong></a> · Shared Git worktree change awareness for coding agents.
+  <a href="https://github.com/shenyankm/GitRelay"><strong>GitRelay</strong></a> · Shared Git worktree change awareness for coding agents.
 </p>
 
 ## Open Source Contributions
