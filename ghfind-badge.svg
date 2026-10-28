@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="210" height="20" role="img" aria-label="GitHub Roast: 77.00 SOLID ↑2.4">
+<title>GitHub Roast: 77.00 SOLID ↑2.4</title>
+<rect rx="3" width="210" height="20" fill="#555"/>
+<rect rx="3" x="92" width="118" height="20" fill="#10B981"/>
+<rect x="92" width="3" height="20" fill="#10B981"/>
+<rect rx="3" width="210" height="20" fill="url(#g)"/>
+<defs><linearGradient id="g" x2="0" y2="100%"><stop offset="0" stop-color="#fff" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient></defs>
+<g fill="#fff" text-anchor="middle" font-family="Verdana,DejaVu Sans,Geneva,sans-serif" font-size="11">
+<text x="46" y="14" fill="#000" fill-opacity=".25">GitHub Roast</text>
+<text x="46" y="13">GitHub Roast</text>
+<text x="151" y="14" fill="#000" fill-opacity=".25">77.00 SOLID ↑2.4</text>
+<text x="151" y="13">77.00 SOLID ↑2.4</text>
+</g>
+</svg>
