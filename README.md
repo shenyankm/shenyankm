@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat&amp;logo=python&amp;logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&amp;logo=typescript&amp;logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Rust-000000?style=flat&amp;logo=rust&amp;logoColor=white" alt="Rust" />
-  <a href="https://ghfind.com/u/shenyankm?ref=badge"><img src="https://raw.githubusercontent.com/shenyankm/shenyankm/2f0eec022d5d38aeaa89362198e48fa397ec1a77/ghfind-badge.svg" alt="GitHub Roast score badge" /></a>
+  <a href="https://ghfind.com/u/shenyankm?ref=badge"><img src="https://ghfind.com/api/badge/shenyankm" alt="GitHub Roast 评分徽章" /></a>
 </p>
 
 ## Featured Project
