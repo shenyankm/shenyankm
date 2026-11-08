@@ -18,7 +18,7 @@
 </p>
 
 <p>
-  <a href="https://github.com/shenyankm/GitRelay"><strong>GitRelay</strong></a> · Shared Git worktree change awareness for coding agents.
+  <a href="https://github.com/shenyankm/gitbeacon"><strong>gitbeacon</strong></a> · MCP server for source-aware Git coordination and conflict alerts for AI agents.
 </p>
 
 ## Open Source Contributions
