@@ -18,10 +18,6 @@
 </p>
 
 <p>
-  <a href="https://github.com/shenyankm/pi-zvec-status"><strong>pi-zvec-status</strong></a> · Pi extension for zvec-grep index status and workspace management.
-</p>
-
-<p>
   <a href="https://github.com/shenyankm/GitRelay"><strong>GitRelay</strong></a> · Shared Git worktree change awareness for coding agents.
 </p>
 
@@ -30,7 +26,7 @@
 | Project | Merged | Highlights |
 |---------|:------:|-----------------|
 | [Qwen&nbsp;Code](https://github.com/QwenLM/qwen-code)<br>(29.1k&nbsp;🌟) | **[18](https://github.com/QwenLM/qwen-code/pulls?q=is%3Apr+is%3Amerged+author%3Ashenyankm)** | [#11443](https://github.com/QwenLM/qwen-code/pull/11443) Keep LSP hover and definitions in sync with saved changes.<br>[#4653](https://github.com/QwenLM/qwen-code/pull/4653) Unify AI-agent ignore rules across file access and search.<br>[#3871](https://github.com/QwenLM/qwen-code/pull/3871) Improve CLI localization and cached translation; [#3323](https://github.com/QwenLM/qwen-code/issues/3323) included in the official Roadmap. |
-| [oh&#8209;my&#8209;codex](https://github.com/Yeachan-Heo/oh-my-codex)<br>(33.7k&nbsp;🌟) | **[11](https://github.com/Yeachan-Heo/oh-my-codex/pulls?q=is%3Apr+is%3Amerged+author%3Ashenyankm)** | [#3876](https://github.com/Yeachan-Heo/oh-my-codex/pull/3876) Recover dispatch state and block delivery into Codex startup or trust prompts.<br>[#3862](https://github.com/Yeachan-Heo/oh-my-codex/pull/3862) Isolate fallback dispatch state to prevent cross-team data loss and duplicate delivery.<br>[#3797](https://github.com/Yeachan-Heo/oh-my-codex/pull/3797) Require structured completion evidence for coding tasks. |
+| [oh&#8209;my&#8209;codex](https://github.com/Yeachan-Heo/oh-my-codex)<br>(33.7k&nbsp;🌟) | **[14](https://github.com/Yeachan-Heo/oh-my-codex/pulls?q=is%3Apr+is%3Amerged+author%3Ashenyankm)** | [#3876](https://github.com/Yeachan-Heo/oh-my-codex/pull/3876) Recover dispatch state and block delivery into Codex startup or trust prompts.<br>[#3862](https://github.com/Yeachan-Heo/oh-my-codex/pull/3862) Isolate fallback dispatch state to prevent cross-team data loss and duplicate delivery.<br>[#3797](https://github.com/Yeachan-Heo/oh-my-codex/pull/3797) Require structured completion evidence for coding tasks. |
 
 ## Tech Stack
 
