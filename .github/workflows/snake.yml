@@ -43,7 +43,7 @@ jobs:
               assert 'Something went wrong' not in ''.join(root.itertext()), f'Error card: {name}'
           badge = ET.parse('dist/ghfind-badge.svg').getroot()
           title = badge.find('{http://www.w3.org/2000/svg}title')
-          assert title is not None and re.match(r'GitHub Roast: \d+\.\d{2} [A-Z]', title.text or ''), 'Invalid English GHFind score badge'
+          assert title is not None and re.match(r'GitHub Roast: (?:\d+\.\d{2} [A-Z]|Lv\.\d+ [A-Z])', title.text or ''), 'Invalid English GHFind score badge'
           PYTHON
       - name: Publish generated images
         uses: crazy-max/ghaction-github-pages@1d6ee9b181a81033a16bd707a1401afa978daab4 # v5.0.0
