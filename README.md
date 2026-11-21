@@ -65,7 +65,7 @@
 ## Contribution Activity
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/1fd580c02bbd5fece687951afa0a1a2bc15acd09/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/1fd580c02bbd5fece687951afa0a1a2bc15acd09/github-snake.svg" />
-  <img alt="Snake animation of my GitHub contributions" src="https://raw.githubusercontent.com/shenyankm/shenyankm/1fd580c02bbd5fece687951afa0a1a2bc15acd09/github-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/f7620ad896dbc64d5714c5e9f3a003dd4c66daeb/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shenyankm/shenyankm/f7620ad896dbc64d5714c5e9f3a003dd4c66daeb/github-snake.svg" />
+  <img alt="Snake animation of my GitHub contributions" src="https://raw.githubusercontent.com/shenyankm/shenyankm/f7620ad896dbc64d5714c5e9f3a003dd4c66daeb/github-snake.svg" />
 </picture>
