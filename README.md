@@ -25,7 +25,7 @@
 
 | Project | Merged |
 |---------|:------: |
-| [Qwen&nbsp;Code](https://github.com/QwenLM/qwen-code)<br>(30.8k&nbsp;🌟) | **[18](https://github.com/QwenLM/qwen-code/pulls?q=is%3Apr+is%3Amerged+author%3Ashenyankm)** |
+| [Qwen&nbsp;Code](https://github.com/QwenLM/qwen-code)<br>(30.9k&nbsp;🌟) | **[18](https://github.com/QwenLM/qwen-code/pulls?q=is%3Apr+is%3Amerged+author%3Ashenyankm)** |
 | [oh&#8209;my&#8209;codex](https://github.com/Yeachan-Heo/oh-my-codex)<br>(33.8k&nbsp;🌟) | **[20](https://github.com/Yeachan-Heo/oh-my-codex/pulls?q=is%3Apr+is%3Amerged+author%3Ashenyankm)** |
 
 ## Tech Stack
